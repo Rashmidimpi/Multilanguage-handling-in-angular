@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-translate-app';
+  constructor(
+    public translate: TranslateService
+  ) {
+    translate.addLangs(['en', 'nl','hi','mr']);
+    translate.setDefaultLang('en');
+  }
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
 }
