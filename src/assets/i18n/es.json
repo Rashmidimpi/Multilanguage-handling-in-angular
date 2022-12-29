@@ -1,0 +1,11 @@
+{
+	"Bio": "Ingresa biografía",
+	"Email": "Dirección de correo electrónico",
+	"Name": "Nombre",
+	"NameError": "Estoy segura de que debes tener un nombre!",
+	"Password": "Clave",
+	"PhoneNo": "Telefono no",
+	"Sitetitle": "Sitio multilingüe angular",
+	"Submit": "Enviar",
+	"TermsConditions": "Acepto los términos y condiciones."
+}
